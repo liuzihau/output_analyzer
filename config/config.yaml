@@ -1,0 +1,26 @@
+model_path: 'pretrain/supercombo_0517.onnx'
+
+data_path1: './data/pc0613'
+data_path2: './data/openpilot_log2'
+# ===========================
+# data_path folder example
+# openpilot_log1
+#  ├── 168274601203
+#  │   ├── input_imgs.bin
+#  │   └── files.bin
+#  └── 168274632307
+# ===========================
+
+
+
+out_root: './exp'
+
+compare:
+  pc2pc: False
+  pc2pc_out_name: ['onnx_outputs1', 'onnx_outputs2']
+  device2pc: True
+  device2pc_out_name: [ 'thneed_outputs', 'onnx_outputs']
+
+
+
+
